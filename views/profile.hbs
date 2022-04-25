@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <nav>
+            <h4>Node MySQL</h4>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/profile">Profile</a></li>
+                <li><a href="/auth/logout">Logout</a></li>
+            </ul>
+        </nav>
+
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-4">
+                    <div class="card">
+                        <div class="avatar-ctn">
+                            <img
+                                src="https://e7.pngegg.com/pngimages/799/987/png-clipart-computer-icons-avatar-icon-design-avatar-heroes-computer-wallpaper-thumbnail.png"
+                                class="avatar" alt="user">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">{{user.name}}</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Fuga distinctio similique,
+                                eaque inventore aspernatur velit error deserunt,
+                                voluptatum sequi, corrupti sit quis optio nulla
+                                excepturi dolores perferendis pariatur ad iure!
+                            </p>
+                            <a href="#" class="btn btn-primary">{{user.email}}</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            Profile Page
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"> Hey {{user.name}}, Welcome
+                                Back!
+                            </h5>
+                            <p class="card-text">Lorem, ipsum dolor sit amet
+                                consectetur adipisicing elit. Tenetur minus quo
+                                quasi, necessitatibus suscipit accusantium ipsa
+                                sed natus ratione, maiores amet possimus dolor
+                                provident adipisci itaque modi, aliquid odio
+                                fugit!</p>
+                            <a href="#" class="btn btn-primary">Go Somewhere!</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            Node MySQL Project
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    </body>
+</html>
